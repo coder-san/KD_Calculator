@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `PUBG K/M Calculator`,
-    description: `Calculate kills needed to reach your target K/M`,
+    title: `K/D maintainer for PUBG`,
+    description: `Helps maintain KD for PUBG`,
     author: `coder-san`,
   },
   plugins: [
@@ -18,8 +18,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `pubg_km_calculator`,
+        short_name: `pubg_km`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
