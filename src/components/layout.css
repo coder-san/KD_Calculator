@@ -1,4 +1,4 @@
-html {
+/* html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -619,4 +619,22 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+} */
+body{
+  text-align: center;
+}
+header {
+  text-align: center;
+  font-size: xx-large;
+  margin-bottom: 5%;
+}
+form {
+  width: 70%;
+  align-content: center;
+  margin: auto;
+}
+.form-group {
+  display: grid;
+  grid-template-columns: 1fr minmax(100px, 1fr);
+  grid-column-gap: 2em;
 }
