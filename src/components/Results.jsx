@@ -6,7 +6,7 @@ function Results(props) {
     return (
         <div className="results">
             {(!isNaN(props.props.current_km)) ?
-                <p>Your current K/M is {props.props.current_km.toFixed(2)}</p>
+                <p>Your current K/M is {props.props.current_km.toPrecision(2)}</p>
                 : <span></span>}
             {(props.props.target_kills && props.props.target_matches && props.props.target_km) ?
                 <div>
