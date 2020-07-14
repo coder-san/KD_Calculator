@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/KD_Calculator",
   siteMetadata: {
     title: `K/D maintainer for PUBG`,
     description: `Helps maintain KD for PUBG`,
