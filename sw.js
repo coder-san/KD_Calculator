@@ -33,11 +33,11 @@ self.__precacheManifest = [
     "url": "framework-5fc6169171e885c3b522.js"
   },
   {
-    "url": "app-51892abf7b7cb9d94a2e.js"
+    "url": "app-62de860c0f129f892925.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "9c9d5095f4a8bd6709525303295c7adc"
+    "revision": "515ab2edfbca966d4defba9aa4b7bf4c"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-7c31e2436cade51cbcda.js"
@@ -48,7 +48,7 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "bc52c5e46745f05dfd17abaeb07d6041"
+    "revision": "f4416206293082a9e518905c2dcf3ad9"
   },
   {
     "url": "manifest.webmanifest",
@@ -145,7 +145,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/KD_Calculator/app-51892abf7b7cb9d94a2e.js`))) {
+  if (!resources || !(await caches.match(`/KD_Calculator/app-62de860c0f129f892925.js`))) {
     return await fetch(event.request)
   }
 
