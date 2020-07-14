@@ -23,8 +23,8 @@ module.exports = {
         name: `pubg_km_calculator`,
         short_name: `pubg_km`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#3cbc1c`,
+        theme_color: `#3cbc1c`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
@@ -42,7 +42,7 @@ module.exports = {
         // Setting this parameter is optional
         anonymize: true,
         // Setting this parameter is also optional
-        respectDNT: true,
+        respectDNT: false,
         // Avoids sending pageview hits from custom paths
         // exclude: ["/preview/**", "/do-not-track/me/too/"],
         // Delays sending pageview hits on route update (in milliseconds)
@@ -58,7 +58,7 @@ module.exports = {
         // Any additional optional fields
         sampleRate: 5,
         siteSpeedSampleRate: 10,
-        cookieDomain: "coder-san.github.io/KD_Calculator/",
+        // cookieDomain: "coder-san.github.io/KD_Calculator/",
       },
     },
   ],

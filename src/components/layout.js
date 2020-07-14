@@ -22,10 +22,10 @@ const Layout = ({ children }) => {
         }
       }
     }
-  `)
+  `);
 
   return (
-    <>
+    <div>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div>
         <main>{children}</main>
@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
           <p>Version {data.site.siteMetadata.version}</p>
         </footer>
       </div>
-    </>
+    </div>
   )
 }
 
