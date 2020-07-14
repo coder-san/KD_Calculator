@@ -639,6 +639,7 @@ form {
   display: grid;
   grid-template-columns: 1fr minmax(100px, 1fr);
   grid-column-gap: 2em;
+  margin-bottom: 3%;
 }
 
 .results {
@@ -649,13 +650,18 @@ form {
   border-radius: 2px;
 }
 
+input[type=number] {
+  border: none;
+  border-bottom: 1px solid black;
+}
+
 @media screen and (min-width: 401px) {
   form {
     max-width: 70%;
   }
   header {
     font-size: xx-large;
-    margin-bottom: 5%;
+    margin-bottom: 8%;
   }
 }
 
