@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 function Results(props) {
     console.log(props);
     return (
-        <div>
+        <div className="results">
             {(props.props.current_km) ?
                 <p>Your current K/M is {props.props.current_km}</p>
                 : <span></span>}
