@@ -4,12 +4,12 @@ import PropTypes from 'prop-types';
 import Results from './Results';
 
 function KM_Form(props) {
-    const [current_kills, setCurrentKills] = useState(0);
-    const [current_matches, setCurrentMatches] = useState(0);
-    const [current_km, setCurrentKM] = useState(0);
-    const [target_km, setTargetKM] = useState(0);
+    const [current_kills, setCurrentKills] = useState();
+    const [current_matches, setCurrentMatches] = useState();
+    const [current_km, setCurrentKM] = useState();
+    const [target_km, setTargetKM] = useState();
     const [target_matches, setTargetMatches] = useState(1);
-    const [target_kills, setTargetKills] = useState(0);
+    const [target_kills, setTargetKills] = useState();
 
     const onCurrentKillsChange = (event) => {
         let value = event.target.value;
