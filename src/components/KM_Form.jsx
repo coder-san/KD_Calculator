@@ -38,7 +38,7 @@ function KM_Form(props) {
     useEffect(() => {
         //calculate kills needed to get to final K/M
         console.log("Calculating kills needed");
-        setCurrentKM(current_kills / current_matches);
+        setCurrentKM((current_kills / current_matches).toFixed(2));
         let kills_needed = (target_km * (current_matches + target_matches)) - current_kills;
         setTargetKills(kills_needed);
     }, [current_kills, current_matches, target_km, target_matches]);
