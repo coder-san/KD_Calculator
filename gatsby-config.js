@@ -4,6 +4,7 @@ module.exports = {
     title: `K/D maintainer for PUBG`,
     description: `Helps maintain KD for PUBG`,
     author: `coder-san`,
+    version: '1.3'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -61,4 +62,4 @@ module.exports = {
       },
     },
   ],
-}
+};
