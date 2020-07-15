@@ -4,7 +4,7 @@ module.exports = {
     title: `K/D maintainer for PUBG`,
     description: `Helps maintain KD for PUBG`,
     author: `coder-san`,
-    version: '1.3'
+    version: '1.4.1'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -20,13 +20,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `pubg_km_calculator`,
-        short_name: `pubg_km`,
+        name: `KD Calculator for PUBG`,
+        short_name: `KD_Calculator`,
         start_url: `/`,
-        background_color: `#3cbc1c`,
-        theme_color: `#3cbc1c`,
+        background_color: `#ffffff`,
+        theme_color: `#000000`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/kd_icon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
@@ -54,10 +54,10 @@ module.exports = {
         // Set Variation ID. 0 for original 1,2,3....
         // variationId: "YOUR_GOOGLE_OPTIMIZE_VARIATION_ID",
         // Defers execution of google analytics script after page load
-        defer: false,
+        defer: true,
         // Any additional optional fields
-        sampleRate: 5,
-        siteSpeedSampleRate: 10,
+        // sampleRate: 5,
+        // siteSpeedSampleRate: 10,
         // cookieDomain: "coder-san.github.io/KD_Calculator/",
       },
     },
