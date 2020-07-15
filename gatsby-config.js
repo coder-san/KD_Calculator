@@ -4,7 +4,7 @@ module.exports = {
     title: `K/D calculator for PUBG`,
     description: `Helps maintain KD for PUBG`,
     author: `coder-san`,
-    version: '1.4.4'
+    version: '1.4.6'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

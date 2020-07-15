@@ -657,8 +657,10 @@ input[type=number] {
 }
 
 footer {
-  position: fixed;
+  position: absolute;
   bottom: 0;
+  font-size: smaller;
+  z-index: -1;
   margin: auto;
   /* margin-top: 5%; */
   text-align: center;
@@ -669,7 +671,7 @@ small {
   display: none;
 }
 
-@media screen and (min-width: 401px) {
+@media screen and (min-width: 451px) {
   form {
     max-width: 70%;
   }
@@ -683,7 +685,7 @@ small {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   form {
     width: 100%;
     font-size: large;
@@ -698,3 +700,7 @@ small {
     margin-bottom: 10%;
   }
 }
+
+/* @media (prefers-color-scheme: dark) {
+
+} */
