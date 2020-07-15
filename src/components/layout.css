@@ -656,15 +656,20 @@ input[type=number] {
   border-bottom: 1px solid black;
 }
 
-footer {
-  position: absolute;
-  bottom: 0;
+.version {
+  position: relative;
+  /* bottom: 0; */
   font-size: smaller;
   z-index: -1;
+  display: flex;
   margin: auto;
-  /* margin-top: 5%; */
+}
+
+.version>p {
+  margin: auto;
+  align-self: center;
   text-align: center;
-  width: 100%;
+  /* width: 100%; */
 }
 
 small {
@@ -681,6 +686,8 @@ small {
   }
   header {
     font-size: xx-large;
+  }
+  .version {
     margin-bottom: 8%;
   }
 }
@@ -697,6 +704,8 @@ small {
   header {
     font-size: x-large;
     font-weight: bold;
+  }
+  .version {
     margin-bottom: 10%;
   }
 }
