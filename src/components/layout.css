@@ -633,13 +633,14 @@ header {
 form {
   align-content: center;
   margin: auto;
+  margin-bottom: 5%;
 }
 
 .form-group {
   display: grid;
   grid-template-columns: 1fr minmax(100px, 1fr);
   grid-column-gap: 2em;
-  margin-bottom: 3%;
+  margin-top: 3%;
 }
 
 .results {
@@ -654,13 +655,18 @@ input[type=number] {
   border: none;
   border-bottom: 1px solid black;
 }
-footer{
+
+footer {
   position: fixed;
   bottom: 0;
   margin: auto;
   /* margin-top: 5%; */
   text-align: center;
   width: 100%;
+}
+
+small {
+  display: none;
 }
 
 @media screen and (min-width: 401px) {
@@ -680,6 +686,11 @@ footer{
 @media screen and (max-width: 400px) {
   form {
     width: 100%;
+    font-size: large;
+  }
+  input[type="number"] {
+    /* padding: 20px 10px; */
+    line-height: 2.5em;
   }
   header {
     font-size: x-large;

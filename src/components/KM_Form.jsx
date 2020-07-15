@@ -49,25 +49,25 @@ function KM_Form(props) {
                 <div className="form-group">
                     <label htmlFor="current_matches">Current matches</label>
                     <input type="number" onChange={onCurrentMatchesChange} value={current_matches} name="current_matches" id="current_matches" className="form-control" placeholder="current_matches" aria-describedby="current_matches_help" />
-                    {/* <small id="current_matches_help" className="text-muted">Current matches on which K/M is to be calculated</small> */}
+                    <small id="current_matches_help" className="text-muted">Current matches on which K/M is to be calculated</small>
                 </div>
                 <div className="form-group">
                     <label htmlFor="current_kills">Current kills</label>
                     <input type="number" onChange={onCurrentKillsChange} value={current_kills}
                         className="form-control" name="current_kills" id="current_kills" aria-describedby="current_kills_help" placeholder="current kills" />
-                    {/* <small id="current_kills_help" className="form-text text-muted">Current number of kills</small> */}
+                    <small id="current_kills_help" className="form-text text-muted">Current number of kills</small>
                 </div>
                 <div className="form-group">
                     <label htmlFor="target_km">Target K/M</label>
                     <input type="number" onChange={onTargetKMChange}
                         className="form-control" name="target_km" value={target_km} id="target_km" aria-describedby="target_km_help" placeholder="Your target K/M" />
-                    {/* <small id="target_km_help" className="form-text text-muted">Your target K/M</small> */}
+                    <small id="target_km_help" className="form-text text-muted">Your target K/M</small>
                 </div>
                 <div className="form-group">
                     <label htmlFor="target_matches">Target matches</label>
                     <input type="number" onChange={onTargetMatchesChange}
                         className="form-control" name="target_matches" value={target_matches} id="target_matches" aria-describedby="target_matches_help" placeholder="Number of matches to reach target" />
-                    {/* <small id="target_matches_help" className="form-text text-muted">Number of matches you wish to reach the target K/M in.</small> */}
+                    <small id="target_matches_help" className="form-text text-muted">Number of matches you wish to reach the target K/M in.</small>
                 </div>
             </form>
             <Results
