@@ -1,6 +1,6 @@
 //jshint esversion:8
 import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import Results from './Results';
 
 function KM_Form(props) {
@@ -13,31 +13,31 @@ function KM_Form(props) {
 
     const onCurrentKillsChange = (event) => {
         let value = event.target.value;
-        console.log("Current kills changed to " + value);
+        // console.log("Current kills changed to " + value);
         setCurrentKills(parseInt(value));
     };
 
     const onCurrentMatchesChange = (event) => {
         let value = event.target.value;
-        console.log("Current matches changed to " + value);
+        // console.log("Current matches changed to " + value);
         setCurrentMatches(parseInt(value));
     };
 
     const onTargetKMChange = (event) => {
         let value = event.target.value;
-        console.log("TargetKM changed to " + value);
+        // console.log("TargetKM changed to " + value);
         setTargetKM(parseInt(value));
     };
 
     const onTargetMatchesChange = (event) => {
         let value = event.target.value;
-        console.log("Target matches changed to " + value);
+        // console.log("Target matches changed to " + value);
         setTargetMatches(parseInt(value));
     };
 
     useEffect(() => {
         //calculate kills needed to get to final K/M
-        console.log("Calculating kills needed");
+        // console.log("Calculating kills needed");
         setCurrentKM(current_kills / current_matches);
         let kills_needed = (target_km * (current_matches + target_matches)) - current_kills;
         setTargetKills(kills_needed);

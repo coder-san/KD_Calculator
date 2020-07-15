@@ -1,8 +1,8 @@
 import React from 'react'
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 function Results(props) {
-    console.log(props);
+    // console.log(props);
     return (
         <div className="results">
             {(!isNaN(props.props.current_km)) ?

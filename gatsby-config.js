@@ -1,10 +1,10 @@
 module.exports = {
   pathPrefix: "/KD_Calculator",
   siteMetadata: {
-    title: `K/D maintainer for PUBG`,
+    title: `K/D calculator for PUBG`,
     description: `Helps maintain KD for PUBG`,
     author: `coder-san`,
-    version: '1.4.1'
+    version: '1.4.2'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
